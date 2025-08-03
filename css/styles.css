@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #343a40;
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+}
+
+.task-item.completed {
+    text-decoration: line-through;
+    background-color: #d4edda;
+}
+
+.btn {
+    margin-left: 10px;
+}
+
+.user-info-card {
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.user-info-card h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #343a40;
+}
+
+.user-info {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #6c757d;
+}
+
+  /* Dark mode styles */
+    body.dark-mode {
+        background: linear-gradient(135deg, #18181b 0%, #312e81 100%) !important;
+        color: #f3f4f6 !important;
+    }
+    body.dark-mode .card,
+    body.dark-mode .list-group-item {
+        background: #232946 !important;
+        color: #f3f4f6 !important;
+        box-shadow: 0 1px 8px rgba(0,0,0,0.18);
+    }
+    body.dark-mode .user-info-card {
+        background: linear-gradient(120deg, #232946 60%, #18181b 100%) !important;
+        box-shadow: 0 6px 32px rgba(49,46,129,0.18);
+    }
+    body.dark-mode .btn-primary {
+        background-color: #6366f1 !important;
+        border-color: #6366f1 !important;
+    }
+    body.dark-mode .btn-outline-dark {
+        color: #f3f4f6 !important;
+        border-color: #f3f4f6 !important;
+    }
+    body.dark-mode .btn-light {
+        background-color: #f3f4f6 !important;
+        color: #232946 !important;
+        border-color: #f3f4f6 !important;
+    }
+    body.dark-mode input,
+    body.dark-mode .form-control {
+        background: #18181b !important;
+        color: #f3f4f6 !important;
+        border-color: #6366f1 !important;
+    }
